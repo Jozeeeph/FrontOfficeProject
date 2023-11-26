@@ -13,8 +13,8 @@ export class UserService {
   constructor(private http: HttpClient) {}
 
   addUser(newUser: User): Observable<User> {
-    const { email, password } = newUser; 
-    const userAdded = { email, password }; 
+    const { email, password,role } = newUser; 
+    const userAdded = { email, password,role }; 
 
     return this.http.post<User>(this.userUrl, userAdded);
   }

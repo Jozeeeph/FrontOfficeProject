@@ -1,12 +1,18 @@
 <br><br><br>
-<app-research-activity></app-research-activity>
-<div class="content" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-  <div class="card" style="width: 18rem;" *ngFor="let activity of activities">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{ activity.title }}</h5>
-      <p class="card-text">Date: {{ activity.date }}</p>
-      <button (click)="afficherDetails(activity.id)">Voir les détails </button>
+
+<div class="content" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+
+  <input class="form-control bg-dark border-0" name="a" type="text" [(ngModel)]="searchText"
+    placeholder="Search By Name" style="width: 300px; margin-bottom: 10px;">
+<br><br>
+  <div class="content" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+    <div class="card" style="width: 18rem;" *ngFor="let activity of activities | search:searchText">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" style="color: black;">{{ activity.eventName }}</h5>
+        <p class="card-text">Date: {{ activity.dateEvent }}</p>
+        <button class="btn btn-primary" (click)="afficherDetails(activity.id)">Voir les détails </button>
+      </div>
     </div>
   </div>
 </div>

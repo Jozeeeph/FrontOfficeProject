@@ -1,12 +1,8 @@
 <br><br><br>
 <div *ngIf="activity">
     <h2>{{ activity.title }}</h2>
-    <p>Date: {{ activity.date | date }}</p>
-    <img [src]="activity.photo" alt="Photo de l'activité">
-
-    <div *ngIf="activity.duration !== undefined">
-        <p>Duration: {{ activity.duration }}</p>
-    </div>
+    <p>Date: {{ activity.dateEvent | date }}</p>
+    <p>Description : {{ activity.description}} </p>
     <div *ngIf="activity.tableField && activity.tableField.length > 0">
         <h3>Informations suuplémentaires:</h3>
         <ul>

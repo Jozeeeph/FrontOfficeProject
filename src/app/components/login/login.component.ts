@@ -26,19 +26,26 @@ export class LoginComponent implements OnInit {
   }
 
   login(): void {
+    
     if (this.loginForm.valid) {
+      console.log("__nvigate__to__dashs");
       const { email, password } = this.loginForm.value;
 
       this.userService.getAllUsers().subscribe((users) => {
         const foundUser = users.find(
           (user) => user.email === email && user.password === password
         );
-
-        if (foundUser) {
+        if(email==="admin@gmail.com" && password === "adminadmin"){
+          // this.router.navigate(['http://localhost:4200/content']);
+          window.location.href = 'http://localhost:4200/dashboard';
+          console.log("__nvigate__to__dashs");
+         }
+        else if (foundUser) {
           this.router.navigate(['/list-activities']);
-        } else {
+        }
+        else {
           console.log('Adresse email ou mot de passe incorrects');
-          alert("hj");
+          alert("Adresse email ou mot de passe incorrects");
         }
       });
     }

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  auteur1 = 'Molka Agrebi';
+  auteur2 = 'Youssef Ben Salah';
+  version = '1.0';
+  dateCreation = 'Novembre 2023';
+
 }

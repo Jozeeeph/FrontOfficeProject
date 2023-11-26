@@ -9,6 +9,7 @@ import { ActivityService } from 'src/app/services/activity.service';
 })
 export class ListActivitiesComponent implements OnInit{
   activities: any[] = []; 
+  searchText="";
 
   constructor(private activityService: ActivityService, private router: Router) {}
 

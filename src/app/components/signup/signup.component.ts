@@ -33,6 +33,7 @@ export class SignupComponent implements OnInit {
   signup(): void {
     if (this.signupForm.valid) {
       const nvUser: User = this.signupForm.value; 
+      nvUser.role=false;
       this.authService.signup(nvUser).subscribe(
         data => console.log(data) );
         this.userService.addUser(nvUser).subscribe(data => console.log(data));
