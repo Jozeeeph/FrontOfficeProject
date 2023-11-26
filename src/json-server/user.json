@@ -1,0 +1,167 @@
+{
+  "activities": [
+    {
+      "id": 1,
+      "title": "Atelier de Développement Web",
+      "photo": "url_de_la_photo_1", 
+      "duration": 20,
+      "date": "21-01-2023",
+      "tableField": [
+        {
+          "intervenant": "Ingénieur en développement web",
+          "endroit": "Salle de conférence B",
+          "pre-requis": "Connaissances HTML/CSS"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Tournoi de Jeux Vidéo",
+      "photo": "url_de_la_photo_2",
+      "duration": 50,
+      "date": "2023-12-12T14:00:00Z",
+      "tableField": [
+        {
+          "intervenant": "Joueurs professionnels",
+          "endroit": "Salle de jeux",
+          "pre-requis": "Aucun"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Conférence sur l'Intelligence Artificielle",
+      "photo": "url_de_la_photo_3",
+      "duration": 30,
+      "date": "12-12-2023",
+      "tableField": [
+        {
+          "intervenant": "Expert en IA",
+          "endroit": "Amphithéâtre",
+          "pre-requis": "Aucun"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Hackathon de Programmation",
+      "photo": "url_de_la_photo_4",
+      "duration": 40,
+      "date": "2024-01-10T09:00:00Z",
+      "tableField": [
+        {
+          "intervenant": "Programmeurs professionnels",
+          "endroit": "Espace de coworking",
+          "pre-requis": "Connaissances en programmation"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Séminaire sur la Cybersécurité",
+      "photo": "url_de_la_photo_5",
+      "duration": 25,
+      "date": "29-11-2023",
+      "tableField": [
+        {
+          "intervenant": "Expert en cybersécurité",
+          "endroit": "Salle de conférence C",
+          "pre-requis": "Aucun"
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "password1",
+      "isNew": false
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "password": "password2",
+      "isNew": true
+    },
+    {
+      "id": 3
+    },
+    {
+      "email": "linaagrebi@yahoo.fr",
+      "password": "moklinmoklin",
+      "id": 4
+    }
+  ],
+  "nouveauUser": [
+    {
+      "id": 1,
+      "firstName": "Molka",
+      "lastName": "Agrebi",
+      "email": "molkaagrebie@yahoo.com",
+      "password": "123123123"
+    },
+    {
+      "firstName": "mmmmm",
+      "lastName": "mmmm",
+      "email": "agrebimolka8@gmail.com",
+      "password": "hbjbbhbk",
+      "id": 2
+    },
+    {
+      "firstName": "molka",
+      "lastName": "agr",
+      "email": "molkaagrebi@yahoo.fr",
+      "password": "lkjhgf,nbv",
+      "id": 3
+    },
+    {
+      "firstName": "mmmmm",
+      "lastName": "mmmm",
+      "email": "agrebimolka8@gmail.com",
+      "password": "fygiuhj$po$i^à",
+      "id": 4
+    },
+    {
+      "firstName": "youssef",
+      "lastName": "bs",
+      "email": "youssefbs@gmailcom",
+      "password": "mmmmmmmmm",
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "firstName": "lina",
+      "lastName": "agre",
+      "email": "linaagrebi@yahoo.fr",
+      "password": "wsdxfcgvbn",
+      "id": 8
+    },
+    {
+      "firstName": "lina",
+      "lastName": "agre",
+      "email": "linaagrebi@yahoo.fr",
+      "password": "esrdtfgyhjçk",
+      "id": 9
+    },
+    {
+      "firstName": "ahmed",
+      "lastName": "ass",
+      "email": "ahmedaslen@gmail.com",
+      "password": "aaaaaaaaa",
+      "id": 10
+    },
+    {
+      "firstName": "lina",
+      "lastName": "agre",
+      "email": "linaagrebi@yahoo.fr",
+      "password": "moklinmoklin",
+      "id": 11
+    }
+  ]
+}

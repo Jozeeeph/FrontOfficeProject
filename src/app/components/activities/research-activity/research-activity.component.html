@@ -1,0 +1,13 @@
+<div>
+    <h2>Rechercher des activités</h2>
+    <form (submit)="searchActivities()">
+        <label for="date">Date :</label>
+        <input type="date" id="date" [(ngModel)]="searchDate" name="date">
+
+        <button type="submit">Rechercher</button>
+    </form>
+    <div *ngFor="let activity of activities">
+        <h3>{{ activity.title }}</h3>
+        <p>Date: {{ activity.date | date }}</p>
+    </div>
+</div>

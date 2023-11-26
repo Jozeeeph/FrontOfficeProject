@@ -1,0 +1,18 @@
+<br><br><br>
+<div *ngIf="activity">
+    <h2>{{ activity.title }}</h2>
+    <p>Date: {{ activity.date | date }}</p>
+    <img [src]="activity.photo" alt="Photo de l'activité">
+
+    <div *ngIf="activity.duration !== undefined">
+        <p>Duration: {{ activity.duration }}</p>
+    </div>
+    <div *ngIf="activity.tableField && activity.tableField.length > 0">
+        <h3>Informations suuplémentaires:</h3>
+        <ul>
+            <li *ngFor="let item of activity.tableField">
+                Intervenant: {{ item.intervenant }} - Endroit: {{ item.endroit }} - Prérequis: {{ item['pre-requis'] }}
+            </li>
+        </ul>
+    </div>
+</div>
